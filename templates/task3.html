@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+  <!-- <script src="{{url_for('static', filename='index.css')}}"></script> -->
+</head>
+<body>
+
+  <!-- <div class="navbar">
+    <div class="buttons">
+      <button class="nav-button" onclick="showContent('task1')">Task 1</button>
+      <button class="nav-button" onclick="showContent('task2')">Task 2</button>
+      <button class="nav-button" onclick="showContent('task3')">Task 3</button>
+    </div>
+  </div>
+  <div> -->
+    <div class="navbar">
+        <div class="buttons">
+          <!-- <button class="nav-button" onclick="showContent('task1')">Task 1</button>
+          <button class="nav-button" onclick="showContent('task2')">Task 2</button>
+          <button class="nav-button" onclick="showContent('task3')">Task 3</button> -->
+          <a href="{{url_for('index')}}" class="nav-button">Task1</a>
+          <a href="{{url_for('task2')}}" class="nav-button">Task2</a>
+          <a href="{{url_for('task3')}}" class="nav-button">Task3</a>
+        </div>
+      </div>
+    <p>conten3</p>
+  </div>
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

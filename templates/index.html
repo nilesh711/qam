@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+  <script src="{{url_for('static', filename='index.css')}}"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="buttons">
+      <!-- <button class="nav-button" onclick="showContent('task1')">Task 1</button>
+      <button class="nav-button" onclick="showContent('task2')">Task 2</button>
+      <button class="nav-button" onclick="showContent('task3')">Task 3</button> -->
+      <a href="{{url_for('index')}}" class="nav-button">Task1</a>
+      <a href="{{url_for('task2')}}" class="nav-button">Task2</a>
+      <a href="{{url_for('task3')}}" class="nav-button">Task3</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <p>conten1</p>
+  </div>
+
+  <!-- <div class="content">
+    <div id="task1" class="task-content active">
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide()"> &#10094;</button>
+        <div class="carousel-image-container">
+          <img src="image1.jpg" alt="" id="carousel-image">
+        </div>
+        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      
+      <div class="row-container">
+        <div class="row-item">
+          <p>
+            Nilesh Rewasiya
+          </p>
+          <p>
+            IIT Mandi
+          </p>
+        </div>
+        <div class="row-item">
+          <p>MAQ Software</p>
+          <p>Sector 132, Noida</p>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div id="task2" class="task-content">   
+      {% for index, row in df.iterrows() %}
+        <div>
+          <p>Customer ID: {{ row['CustomerID'] }}</p>
+          <p>Name: {{ row['Name'] }}</p>
+          <p>Address: {{ row['Address'] }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+
+    <div id="task3" class="task-content">
+      <p>This is the content 3</p>
+    </div>
+  </div> -->
+
+</body>
+</html>

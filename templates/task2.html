@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+    
+  </head>
+ 
+<body>
+    <div class="navbar">
+        <div class="buttons">
+          <!-- <button class="nav-button" onclick="showContent('task1')">Task 1</button>
+          <button class="nav-button" onclick="showContent('task2')">Task 2</button>
+          <button class="nav-button" onclick="showContent('task3')">Task 3</button> -->
+          <a href="{{url_for('index')}}" class="nav-button">Task1</a>
+          <a href="{{url_for('task2')}}" class="nav-button">Task2</a>
+          <a href="{{url_for('task3')}}" class="nav-button">Task3</a>
+        </div>
+      </div>
+
+    <div>
+        <p>conten2</p>
+      </div>
+      <script src="{{url_for('static', filename='script.js')}}"></script>
+    <!-- <div class="table">
+        <div class="heading"><h1>Customer Table</h1> </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">CustomerID</th>
+                    <th scope="col">NameStyle</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">MiddleName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Suffix</th>
+                    <th scope="col">CompanyName</th>
+                    <th scope="col">SalesPerson</th>
+                    <th scope="col">EmailAddress</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">PasswordHash</th>
+                    <th scope="col">PassworSalt</th>
+                    <th scope="col">rowguid</th>
+                    <th scope="col">ModifiedDate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for index, row in df.iterrows() %}
+                <tr>
+                    <td>{{ row.customerid }}</td>
+                    <td>{{ row.namestyle }}</td>
+                    <td>{{ row.title }}</td>
+                    <td>{{ row.firstname }}</td>
+                    <td>{{ row.middlename }}</td>
+                    <td>{{ row.lastname }}</td>
+                    <td>{{ row.suffix }}</td>
+                    <td>{{ row.companyname }}</td>
+                    <td>{{ row.salesperson }}</td>
+                    <td>{{ row.emailaddress }}</td>
+                    <td>{{ row.phone }}</td>
+                    <td>{{ row.passwordhash }}</td>
+                    <td>{{ row.passworsalt }}</td>
+                    <td>{{ row.rowguid }}</td>
+                    <td>{{ row.modifieddate }}</td>
+ 
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table> -->
+    </div>
+</body>
+ 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="buttons">
+      <button class="nav-button" onclick="showContent('task1')">Task 1</button>
+      <button class="nav-button" onclick="showContent('task2')">Task 2</button>
+      <button class="nav-button" onclick="showContent('task3')">Task 3</button>
+    </div>
+  </div>
+
+</body>
+</html> -->
