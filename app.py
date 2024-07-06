@@ -5,10 +5,10 @@ import pandas as pd
 app = Flask(__name__)
 
 def fetch_data_from_azure_sql():
-    server = 'bootcampjuly1server.database.windows.net'
-    database = 'bootcampjuly2024db'
-    username = 'bootcamp'
-    password = 'Pass@123'
+    server = ''
+    =''
+    username = ''
+    password = ''
     driver= '{ODBC Driver 18 for SQL Server}' 
     try:
         conn = pyodbc.connect('DRIVER=' + driver + ';SERVER=' + server + ';PORT=1433;DATABASE=' + database + ';UID=' + username + ';PWD=' + password)
